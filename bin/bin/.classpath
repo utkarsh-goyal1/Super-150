@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="lec11/|lec20/|DP/|lec13/|lec18/|lec16/|lec17/|AdvancedArray/|lec3/|lec1/|lec8/|lec7/|lec6/|lec9/" kind="src" path=""/>
+	<classpathentry kind="src" path="AdvancedArray"/>
+	<classpathentry kind="src" path="DP"/>
+	<classpathentry kind="src" path="lec1"/>
+	<classpathentry kind="src" path="lec11"/>
+	<classpathentry kind="src" path="lec13"/>
+	<classpathentry kind="src" path="lec16"/>
+	<classpathentry kind="src" path="lec17"/>
+	<classpathentry kind="src" path="lec18"/>
+	<classpathentry kind="src" path="lec20"/>
+	<classpathentry kind="src" path="lec3"/>
+	<classpathentry kind="src" path="lec6"/>
+	<classpathentry kind="src" path="lec7"/>
+	<classpathentry kind="src" path="lec8"/>
+	<classpathentry kind="src" path="lec9"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

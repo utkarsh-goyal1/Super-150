@@ -1,0 +1,59 @@
+package lec11;
+import java.util.*;
+public class spiral_matrix {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int m=sc.nextInt();
+		int n=sc.nextInt();
+		int[][] A=new int[m][n];
+		for(int i=0;i<A.length;i++)
+		{
+			for(int j=0;j<A[0].length;j++)
+			{
+				A[i][j]=sc.nextInt();
+			}
+		}
+		spiral(A);
+	}
+	public static void spiral(int [][]A)
+	{
+		int total=A.length*A[0].length;
+		int minr=0;
+		int maxr=A.length-1;
+		int minc=0;
+		int maxc=A[0].length-1;
+		int c=0;
+		while(c<total)
+		{
+			for(int i=minc;i<=maxc && c<total;i++)
+			{
+				System.out.print(A[minr][i]+", ");
+				c++;
+			}
+			minr++;
+			for(int i=minr;i<=maxr && c<total;i++)
+			{
+				System.out.print(A[i][maxc]+", ");
+				c++;
+			}
+			maxc--;
+			for(int i=maxc;i>=minc && c<total;i--)
+			{
+				System.out.print(A[maxr][i]+", ");
+				c++;
+			}
+			maxr--;
+			for(int i=maxr;i>=minr && c<total;i--)
+			{
+				System.out.print(A[i][minc]+", ");
+				c++;
+			}
+			minc++;
+		}
+		System.out.print("END");
+		
+	}
+
+
+}
